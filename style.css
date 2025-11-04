@@ -31,7 +31,9 @@ p {
   line-height: 1.5;
 }
 
-button {
+/* Styles for both <button> and the fallback <a id="telegramBtn"> */
+button,
+a#telegramBtn {
   background-color: #00b894;
   color: white;
   border: none;
@@ -40,8 +42,11 @@ button {
   cursor: pointer;
   font-size: 1em;
   transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
 }
 
-button:hover {
+button:hover,
+a#telegramBtn:hover {
   background-color: #019875;
 }
