@@ -25,7 +25,7 @@ if (btn) {
   let current = slides.findIndex(s => s.classList.contains('active'));
   if (current === -1) current = 0;
 
-  const intervalMs = 3500;
+  const intervalMs = 4000;
   let timer = null;
 
   function show(idx) {
