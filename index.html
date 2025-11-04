@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Predicciones Deportivas</title>
+  <!-- Display font for the title -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,9 +14,20 @@
       <!-- Logo -->
       <img class="logo" src="assets/logo.jpg" alt="Apuestas Seguras logo" />
 
-      <h1><span class="site-name">🔥Apuestas Seguras🔥</span></h1>
+      <h1 class="title-row">
+        <span class="flame left">🔥</span>
+        <span class="site-name">APUESTAS SEGURAS</span>
+        <span class="flame right">🔥</span>
+      </h1>
       <p>Únete a nuestro canal exclusivo de Telegram y recibe las mejores apuestas cada día totalmente gratis.</p>
-  <a id="telegramBtn" class="btn main-cta" href="https://t.me/+fzyyyIPlGNswY2Jh" target="_blank" rel="noopener noreferrer">Ir al Canal</a>
+  <a id="telegramBtn" class="btn main-cta" href="https://t.me/+fzyyyIPlGNswY2Jh" target="_blank" rel="noopener noreferrer">
+        <!-- Telegram icon inside main CTA -->
+        <svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="12" fill="#fff" opacity="0.06" />
+          <path fill="#fff" d="M21.6 3.6c-.2-.7-.9-1.1-1.6-.9L2.9 9.1c-.6.2-.7 1.1-.1 1.4l4.1 1.6 1.6 4.6c.2.6 1 0 .9-.3l-.7-2.5 4.4 3c.5.3 1.1 0 1.2-.6l3.2-17.1c.1-.2.1-.4 0-.6zM9.6 13.3l6.1-5.1-7.2 4.9 1.1.2z" />
+        </svg>
+        Ir al Canal
+      </a>
 
       <!-- Carrusel -->
       <div class="carousel" id="carousel" aria-roledescription="carousel">
@@ -22,12 +35,27 @@
           <img src="assets/slide1.jpg" class="slide active" alt="Imagen 1" />
           <img src="assets/slide2.jpg" class="slide" alt="Imagen 2" />
           <img src="assets/slide3.jpg" class="slide" alt="Imagen 3" />
+
         </div>
         <div class="carousel-controls">
           <button class="carousel-btn prev" aria-label="Anterior">‹</button>
           <button class="carousel-btn next" aria-label="Siguiente">›</button>
         </div>
       </div>
+
+      <!-- How it works / explanatory block -->
+      <section class="how-it-works" aria-labelledby="how-heading">
+        <h2 id="how-heading" class="how-title">❓ COMO GANAS DINERO ACÁ? ⬇</h2>
+
+        <div class="how-body">
+          <p>💯 Ganamos dinero apostando en deportes, en este sentido tú <strong>NO</strong> necesitas saber nada del tema, precisamente para eso me tienes a mi. Yo haré todo por ti, tu sólo vas a cobrar.</p>
+
+          <p>✅ Yo te voy a guiar en cada paso para que te conviertas en alguien exitoso y rentable en esto, al igual que lo hacen <strong>Camilo Cuellar</strong> y <strong>Michel Ramos</strong> en grande y por esto nos recomiendan.</p>
+
+          <p>‼ El servicio donde tendrás acceso a toda esta guía y a las ganancias es el servicio <strong>premium</strong>, la info de este te la pasé hace un rato. Revísala y si te interesa acceder me cuentas medio de pago 😃</p>
+
+        </div>
+      </section>
 
       <!-- Servicios -->
       <section class="services" aria-labelledby="services-heading">
@@ -98,6 +126,15 @@
       </section>
     </div>
   </section>
+
+  <!-- Lightbox for full-image preview -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close="true"></div>
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button class="lightbox-close" aria-label="Cerrar imagen">×</button>
+      <img id="lightboxImg" src="" alt="Imagen ampliada" />
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
